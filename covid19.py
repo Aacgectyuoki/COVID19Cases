@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-us_loc = pd.read_csv("../input/us-counties-covid-19-dataset/us-counties.csv", parse_dates=['date'],
+us_loc = pd.read_csv("us-counties.csv", parse_dates=['date'],
                                 index_col=['date'])
 us_loc.tail()
 
