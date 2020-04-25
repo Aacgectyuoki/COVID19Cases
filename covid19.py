@@ -1,11 +1,8 @@
 import numpy as np
 import pandas as pd
-# Comment the Seaborn import out if you get an error
-import seaborn as sns
 import matplotlib.pyplot as plt
 
-us_loc = pd.read_csv("us-counties.csv", parse_dates=['date'],
-                                index_col=['date'])
+us_loc = pd.read_csv("us-counties.csv", parse_dates=['date'], index_col=['date'])
 us_loc.tail()
 
 new_york = us_loc[us_loc["county"] == "New York City"]
