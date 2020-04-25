@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+# Comment the Seaborn import out if you get an error
 import seaborn as sns
 import matplotlib.pyplot as plt
 
