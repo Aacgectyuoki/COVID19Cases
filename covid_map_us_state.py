@@ -1,8 +1,7 @@
 import numpy as np
 import pandas as pd
-from fbprophet import Prophet
+# install folium before importing it
 import folium
-import json
 
 data = pd.read_csv("../input/us-counties-covid-19-dataset/us-counties.csv")
 
