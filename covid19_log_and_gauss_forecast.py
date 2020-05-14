@@ -15,6 +15,7 @@ new_york["new_cases"] = new_york['cases'] - new_york['cases'].shift(1)
 new_york["new_cases"] = new_york["new_cases"].replace('NaN', 0)
 new_york.head()
 
+
 # imports from:
 # Di Pietro, M (2020) Python source code (Version 3.0) [Source code]. 
 # https://github.com/mdipietro09/DataScience_ArtificialIntelligence_Utils/tree/a7f3991814dd6b2ac3f3f73892b5dcaf9122d296/time_series
@@ -87,7 +88,8 @@ def forecast_curve(ts, f, model, pred_ahead=None, end=None, freq="D", zoom=30, f
     ## plot
     utils_plot_parametric(new_york, zoom=zoom)
     return new_york
-    
+
+  
 # test logistic curve
 def f(x): 
     return 90000 / (1 + np.exp(-0.5*(x-20)))
